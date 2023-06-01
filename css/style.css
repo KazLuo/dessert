@@ -419,7 +419,7 @@ color: #3F5D45;
 
 
 .header_productgraph{
-	background-image: url(/imge/banner.png);
+	background-image: url(imge/banner.png);
 	margin: 0;
 	width: 100%;
 	height: 496px;
@@ -1054,7 +1054,7 @@ padding-bottom: 32px;
 
 
 .pay_maingraph{
-	background-image: url(/imge/payment_success.jpg);
+	background-image: url(imge/payment_success.jpg);
 	margin: 0;
 	width: 100%;
 	height: 496px;
