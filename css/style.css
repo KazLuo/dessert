@@ -1,0 +1,1389 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/*全區域Border-box */
+*, *::before, *::after 
+{
+    box-sizing: border-box;
+}
+
+/*設定圖片響應式*/
+img
+{
+    max-width: 100%;/*設定最大寬度 響應式*/
+    height: auto;
+	vertical-align: middle;
+}
+
+.dehaze{
+	display: none;
+}
+.maincontainer{
+width: 1024px ;
+
+padding : 0 42px;
+margin: 0 auto;
+}
+
+.main_logo
+{
+	width:209px;
+	height: 40px;
+}
+
+.headbar{
+	padding: 30px 0;
+	display: flex;
+	justify-content: space-between;
+}
+
+.headbar_link{
+	display: flex;
+	justify-content: space-between;
+	
+}
+
+.item{
+	padding: 10px 30px;
+	display: flex;
+	align-items: center;
+}
+
+.header_maingraph{
+	background-image: url(https://tingminitime.github.io/sweetaste/img/home_banner.jpg);
+	margin: 0;
+	width: 100%;
+	height: 496px;
+	background-position: center;
+	background-size: cover;
+}
+
+.main_menu
+{
+	display: flex;
+	text-align: center;
+	margin: 0 auto;
+	padding: 0 81px;
+	margin-top: -86px;
+	padding-bottom: 80px;
+}
+
+.main_menu .today_special
+{
+	width: 100%;
+	height: 256px;
+	background-image: url(https://bit.ly/2R5tqwD);
+	background-position: center;
+	background-size: cover;
+
+
+}
+
+.main_menu .today_special_link{
+
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	backdrop-filter: blur(5px);
+    background-color: rgba(63, 93, 69, 0.75);
+	width: 100%;
+    height: 100%;
+	
+}
+
+.main_menu .popularity
+{
+	width: 100%;
+	height: 256px;
+	background-image: url(https://bit.ly/2Dwoxd7);
+	background-position: center;
+	background-size: cover;
+	
+}
+
+.main_menu .today_special_link{
+
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	backdrop-filter: blur(5px);
+    background-color: rgba(63, 93, 69, 0.75);
+	width: 100%;
+    height: 100%;
+	
+}
+
+.main_menu .new_arrivals
+{
+	width: 100%;
+	height: 256px;
+	background-image: url(https://bit.ly/2OUteif);
+	background-position: center;
+	background-size: cover;
+}
+
+.main_menu .link
+{
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	backdrop-filter: blur(5px);
+    background-color: rgba(63, 93, 69, 0.75);
+	width: 100%;
+    height: 100%;
+	color: white;
+    text-decoration: none;
+	font: normal normal 600 24px/30px PingFang TC;
+}
+
+.main_menu .link:hover
+{
+	color: #3F5D45;
+	background: rgba(255, 225, 128, 0.75);
+	backdrop-filter: blur(5px);
+}
+
+
+.text-vertical
+{
+	writing-mode: vertical-rl;
+}
+
+.introduct
+{
+	height: 460px;
+	margin-bottom: 60px;
+
+
+}
+
+.introduct-background
+{
+	height: 420px;
+	background-color:#EAF0ED;
+	display: flex;
+    align-items: center;
+}
+
+.intro_content{
+	display: flex;
+	justify-content: space-between;
+	align-items: flex-start;
+}
+
+
+.intro_content .intro_photo{
+	
+	
+	background-position: center;
+	background-size: cover;
+	width: 460px;
+	height: 460px;
+	background-repeat: no-repeat;
+}
+
+
+
+.intro_content .intro_text-slogan{
+	width: 89px;
+	height: 307px;
+	background-repeat: no-repeat;
+}
+
+.intro-text
+{
+	max-height: 280px;
+    font-size: 16px;
+    font-weight: 100;
+    line-height: 2;
+    color: #3F5D45;
+    align-self: center;
+}
+
+.slogan{
+	width: 89px;
+	height: 307px;
+	background-repeat: no-repeat;
+	margin: 0 auto;
+	margin-bottom: 80px;
+
+}
+
+.product_card
+{
+	position: relative;
+	display: flex;
+	flex-wrap: wrap;
+	width: 300px;
+}
+.card_photo{
+    width: 300px;
+    height: 315px;
+	object-fit: cover;
+	border: 1px solid #EAF0ED;
+	
+}
+.product_name{
+	padding:14px 33px;
+	text-align: left;
+	font: normal normal 300 20px/20px PingFang TC;
+	color: #3F5D45;
+	border: 1px solid #EAF0ED;
+}
+.product_price{
+	padding: 14px 31px;
+	text-align: center;
+	font: normal normal 600 20px/24px PingFang TC;
+	color: #3F5D45;
+	border: 1px solid #EAF0ED;
+}
+.product_cart{
+	padding: 16px 89px;
+	text-align: center;
+	font: normal normal 600 24px/20px PingFang TC;
+	color: #3F5D45;
+	background: #EAF0ED 0% 0% no-repeat padding-box;
+	border: 1px solid #EAF0ED;
+}
+
+.product_cart:hover {
+	color: #fff;
+    background-color: #3F5D45;
+}
+
+.product_list
+{
+	display: flex;
+	flex-wrap: wrap;
+	margin-bottom: 60px;
+	gap: 20px;	
+	justify-content: flex-end
+}
+
+.subscribe-bg{
+	height: 116px;
+	background: #3F5D45 0% 0% no-repeat padding-box;
+	
+    align-items: center;
+}
+
+
+.logo-light img{
+	width: 40px;
+	height: 40px;
+	
+}
+
+.subscribe-bg .subscribe-text{
+	text-align: left;
+	font: normal normal normal 24px/29px Helvetica Neue;
+	color: #EAF0ED;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+
+}
+
+.subscribe-struct
+{
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	padding: 30px 80px;
+	flex-wrap: wrap;
+}
+
+.subscribe-struct h2{
+margin-left: 20px;
+}
+
+.input-area{
+	width: 380px;
+	position: relative;
+}
+
+.input-area .mailicon{
+	position: absolute;
+	left: 20px;
+	top: 25%;
+}
+
+.subscrib-input{
+	width: 100%;
+	padding: 16px 16px 16px 60px;
+}
+
+.subscribe-btn{
+    position: absolute;
+    left: 83%;
+    top: 1.5%;
+    width: 64px;
+    height: 52px;
+    background: #FFE180 0% 0% no-repeat padding-box;
+    border: none;
+}
+
+.footer{
+	background-color: rgb(234, 240, 237);
+	height: 100%;
+	width: 100%;
+	padding: 30px 0;
+}
+
+.footer-logotype{
+	width: 171px;
+	height: 27px;
+	margin-bottom: 115.5px;
+}
+
+.footer-content{
+	display: flex;
+	justify-content: space-between;
+
+}
+
+.contact-info{
+margin-bottom: 30px;
+text-align: left;
+font: 16px/24px Helvetica Neue;
+letter-spacing: 0px;
+color: #3F5D45;
+}
+
+.footer-icon{
+	display: flex;
+}
+
+.footer-icon img{
+	margin-right: 8px;
+	width: 32px;
+	height: 32px;
+}
+
+.footer-slogan{
+	max-width: 59px;
+
+}
+
+.bottomInfo{
+	display: flex;
+	justify-content: space-between;
+	margin-top: 30px;
+}
+
+
+.header_productgraph{
+	background-image: url(/imge/banner.png);
+	margin: 0;
+	width: 100%;
+	height: 496px;
+	background-position: center;
+	background-size: cover;
+	margin-bottom: 60px;
+}
+
+.productsPage{
+	display: flex;
+	margin-bottom: 60px;
+}
+
+
+.product-class-title{
+	width: 300px;
+	padding: 16px 0;
+	text-align: center;
+	color: #EAF0ED;
+	border: 1px solid #EAF0ED;
+	font:  600 24px/40px PingFang TC;
+	background: #3F5D45 0% 0% no-repeat padding-box;
+	
+}
+
+.featured{
+	background-color: #3F5D45;
+    width: 36px;
+    padding: 10px;
+    text-align: center;
+    color: #fff;
+    top: 0;
+    left: 20px;
+	position: absolute;
+}
+
+.favorite{
+    width: 36px;
+    padding: 10px;
+    text-align: center;
+    color: #fff;
+    top: 0;
+    right: 20px;
+	position: absolute;
+}
+
+
+.product-class{
+	display: block;
+	width: 300px;
+	
+	text-align: center;
+    color: #3F5D45;
+	border: 1px solid #EAF0ED;
+	font:  600 24px/40px PingFang TC;
+	
+}
+
+.product-class :hover {
+	background-color: #eaf0ed;
+	
+}
+
+.product-class a{
+	padding: 16px 0;
+	display: block;
+	width: 100%;
+	height: 100%;
+	
+	
+}
+
+.pagefram{
+	display: flex;
+}
+
+
+.page-content{
+	display: block;
+	width: 60px;
+	
+	text-align: center;
+    color: #3F5D45;
+	border: 1px solid #EAF0ED;
+	font:  600 24px/40px PingFang TC;
+	
+}
+
+.page-content :hover {
+	background-color: #eaf0ed;
+	
+}
+
+.page-content a{
+	
+	display: block;
+	width: 100%;
+	height: 100%;
+	
+}
+
+.page-content img{
+	display: inline;
+	vertical-align: middle;
+}
+
+.page-content .arrow{
+	display: inline;
+    vertical-align: middle;
+}
+
+.login{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	margin: 30px 0 60px 0;
+    min-height: 380px;
+	
+}
+
+.login-content{
+	flex-basis: 390px;
+    height: 350px;   
+    transition: all .2s;
+	position: relative;
+	
+}
+
+.login-content:hover
+{
+	
+	height: 380px; 
+    transition: all .2s;
+	box-shadow: 0 0 10px rgba(0,0,0,.5);
+	
+}
+
+
+
+
+.login-title{
+	
+	font: normal normal 600 36px/43px PingFang TC;
+	color: #8DA291;
+	padding: 25px 0;
+	text-align: center;
+    line-height: 1.5;
+	transition: all .2s;
+}
+
+.login-content:hover .login-title{
+	text-align: center;
+	font: normal normal 600 36px/43px PingFang TC;
+	color: #EAF0ED;
+	padding: 40px 0;
+
+}
+
+
+
+
+
+.login-input{
+	width: 330px;
+	height: 56px;
+	margin: 0 auto;
+	position: relative;
+	margin-bottom: 16px;
+}
+
+.login-input .icon{
+	width: 24px;
+	position: absolute;
+	left: 20px;
+	top: 25%;
+}
+
+.login-btn{
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	font: 700 24px/20px PingFang TC;
+	color: #EAF0ED;
+	padding: 16px 0;
+	background-color: #8DA291;
+	width: 100%;
+	position: absolute;
+	bottom: 0;
+	left: 0px;
+	height: 65px;
+	
+}
+
+.login-content:hover .login-btn{
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	font: 700 24px/20px PingFang TC;
+	color: #3F5D45;
+	padding: 16px 0;
+	background-color: #FFE180
+}
+
+
+
+
+.login-input-bg{
+	background-color: #EAF0ED;
+	padding: 0 30px;
+}
+
+.login-content:hover .login-input-bg {
+	background-color: #3F5D45;
+}
+
+
+.check-box{
+padding-bottom: 32px;
+
+}
+	
+
+
+.community-title{
+	
+	font: 300 24px/36px PingFang TC;
+	color: #8DA291;
+	padding: 25px 0;
+	text-align: center;
+    line-height: 1.5;
+	transition: all .2s;
+}
+
+.login-content:hover .community-title{
+	text-align: center;
+	font: 300 24px/36px PingFang TC;
+	color: #EAF0ED;
+	padding: 40px 0;
+
+}
+
+.login-content-community:hover .community-title{
+	text-align: center;
+	font: 300 24px/36px PingFang TC;
+	color: #EAF0ED;
+	padding: 40px 0;
+
+}
+
+.login-community-logo{
+    width: 330px;
+    height: 56px;
+    margin: 0 auto;
+    margin-bottom: 16px;
+    background-color: #FFFFFF;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.login-community-logo:hover{
+
+    background-color: #FFE180;
+
+}
+
+.login-community-logo img{
+
+	width: 30%;
+	
+	
+}
+
+.login-community-bg{
+	background-color: #EAF0ED;
+	padding: 24px 30px;
+}
+
+.login-content:hover .login-community-bg {
+	background-color: #3F5D45;
+}
+
+.login-content-community:hover .login-community-bg {
+	background-color: #3F5D45;
+}
+
+.login-content-community {
+    flex-basis: 390px;
+    height: 350px;
+    transition: all .2s;
+    position: relative;
+}
+
+.community-m
+{
+	display: none;
+
+	justify-content: center;
+	max-width: 460px;
+}
+
+.cart-page{
+	display: flex;
+	justify-content: space-between;
+	margin: 30px 0 40px 0;
+	align-items: flex-start;
+
+}
+
+.cart-list{
+	flex-basis: 620px;
+}
+
+.cart-title{
+	text-align: center;
+	font:  600 24px/20px PingFang TC;
+	letter-spacing: 0px;
+	color: #3F5D45;
+	height: 65px;
+	margin-bottom: 13px;
+	padding: 14.5px 0;
+	line-height: 1.5;
+	background-color: #EAF0ED;
+}
+
+.cart-contect{
+
+	color: #3F5D45;
+}
+
+.cart-item{
+	display: flex;
+	align-items: center;
+	padding: 20px 0;
+	justify-content:space-between;
+	border-bottom: #EAF0ED 1px solid;
+}
+.cart-pic{
+
+	width: 110px;
+	height: 110px;
+}
+
+.cart-pic img{
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+}
+
+.ordertotal-struct{
+	flex-basis: 300px;
+    background-color: #3F5D45;
+    position: relative;
+	margin-bottom: 60px;
+	
+}
+
+
+
+.product-amount{
+	display: flex;
+}
+
+
+.product-count{
+	display: block;
+	width: 48px;
+	text-align: center;
+    color: #3F5D45;
+	border: 1px solid #EAF0ED;
+	font:  300 16px/15px PingFang TC;
+	line-height: 48px;
+
+
+
+	
+}
+
+.product-count :hover {
+	background-color: #EAF0ED;
+	
+}
+
+.product-count a{
+	
+	display: block;
+	width: 100%;
+	height: 100%;
+	
+}
+.price{
+	font:  600 20px/20px PingFang TC;
+	color: #3F5D45;
+}
+.trash{
+	width: 24px;
+    height: 24px;
+}
+
+.order-title{
+	font:  600 24px/20px PingFang TC;
+	letter-spacing: 0px;
+	color: #EAF0ED;
+	text-align: center;
+	padding: 16px 0;
+	line-height: 1.5;
+}
+
+.order-text{
+	font: normal normal 300 16px/20px PingFang TC;
+	color: #EAF0ED;
+	display: flex;
+	justify-content: space-between;
+
+
+}
+
+.order-price{
+	margin: 0 20px 0 20px;
+    padding: 18px 0;
+    border-top: 1px solid #EAF0ED;
+}
+
+
+.order-total{
+	font-size: 20px;
+    font-weight: 500;
+    margin: 0 20px 16px 20px;
+	display: flex;
+    justify-content: space-between;
+	color: #EAF0ED;
+}
+
+.checkout-btn{
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	font: 700 24px/20px PingFang TC;
+	color: #3F5D45;
+	padding: 16px 0;
+	background-color:#FFE180;
+	width: 100%;
+	position: absolute;
+	height: 65px;
+	
+}
+
+.transport-content{
+	display: flex;
+	justify-content: center;
+	align-items: flex-start;
+	margin: 30px 0 60px 0;
+
+}
+.transport 
+{
+    max-width: 460px;
+    color: #EAF0ED;
+    background-color: #3F5D45;
+}
+
+.transport-title
+{
+    padding: 30px 40px;
+    line-height: 50px;
+	display: flex;
+	justify-content: space-between;
+}
+
+.transport-title .title{
+	font-size: 36px;
+    font-weight: 500;
+    margin-right: 8px;
+}
+
+.progressbar{
+	flex-basis: 186px;
+}
+
+.transport-input{
+	
+	padding: 0 40px;
+	display: flex;
+	justify-content: space-between;
+	flex-wrap: wrap;
+}
+
+.label-text {
+    font-size: 20px;
+    font-weight: 500;
+    width: 100%;
+    margin-bottom: 8px;
+    line-height: 1.5;
+    display: flex;
+    justify-content: space-between;
+}
+
+.label-input{
+    font-size: 20px;
+    font-weight: normal;
+    padding: 16px 20px;
+    width: 100%;
+    line-height: 1.2;
+    border: none;
+    color: #3F5D45;
+    background-color: #EAF0ED;
+	max-width: 460px;
+}
+
+.label-input-half{
+    font-size: 20px;
+    font-weight: normal;
+    padding: 16px 20px;
+    width: 100%;
+    line-height: 1.2;
+    border: none;
+    color: #3F5D45;
+    background-color: #EAF0ED;
+	max-width: 186px;
+}
+
+.detail-label{
+	margin-bottom: 16px;
+}
+
+.label-full{
+	width: 100%;
+	display: flex;
+	justify-content: space-between;
+	flex-wrap: wrap;
+	margin-bottom: 16px;
+}
+	
+.select{
+	font-size: 16px;
+    font-weight: 300;
+    flex-basis: 186px;
+    padding: 16px 20px;
+    margin-bottom: 8px;
+    line-height: 1.5;
+    color: #8DA291;
+    background-color: #EAF0ED;
+}
+/*-------------------------------------*/
+
+.ordercheck-title{
+	font:  600 24px/20px PingFang TC;
+	letter-spacing: 0px;
+	color: #8DA291;
+	text-align: center;
+	padding: 16px 0;
+	line-height: 1.5;
+	background-color: #EAF0ED;
+}
+
+.ordercheck-text{
+	font: normal normal 300 16px/20px PingFang TC;
+	color: #8DA291;
+	display: flex;
+	justify-content: space-between;
+
+
+}
+
+.ordercheck-price{
+	margin: 0 20px 0 20px;
+    padding: 18px 0;
+  
+}
+
+
+.ordercheck-total{
+	font-size: 20px;
+    font-weight: 500;
+    margin: 0 20px 16px 20px;
+	display: flex;
+    justify-content: space-between;
+	color: #8DA291;
+}
+
+.ordertotalcheck-struct{
+	min-width: 300px;
+    position: relative;
+	border: 1px solid #EAF0ED;
+}
+
+.checkpage{
+	margin-left: 20px;
+}
+
+
+.cart-item-check{
+	display: flex;
+	align-items: center;
+	padding: 16px 20px;
+	justify-content:space-between;
+	border-bottom: #EAF0ED 1px solid;
+}
+
+.cart-pic-check{
+
+	width: 120px;
+
+	height: 80px;
+}
+
+.cart-item-check img
+{
+	width: 100%;
+    height: 100%;
+
+    object-fit: cover;
+}
+
+.slogan-m{
+	margin: 60px;
+	display: none;
+}
+
+.next-btn{
+	display: flex;
+    align-items: center;
+    justify-content: center;
+    font: 700 24px/20px PingFang TC;
+    color: #3F5D45;
+    padding: 16px 0;
+    background-color: #FFE180;
+
+    height: 65px;
+}
+
+
+.pay_maingraph{
+	background-image: url(/imge/payment_success.jpg);
+	margin: 0;
+	width: 100%;
+	height: 496px;
+	background-position: center;
+	background-size: cover;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-direction: column;
+	margin: 0 0 60px 0;
+}
+
+.successbar{
+	min-width: 190px;
+    margin-bottom: 30px;
+}
+
+.success-title{
+	margin-bottom: 50px;
+    font-family: 'Noto Serif TC', serif;
+    font-size: 48px;
+    font-weight: 500;
+    color: #3F5D45;
+}
+
+.goshopping
+{
+	font-size: 24px;
+    font-weight: 500;
+    min-width: 300px;
+    line-height: 65px;
+    color: #3F5D45;
+    background-color: #FFE180;
+    text-align: center;
+}
+
+.mb-20{
+	margin-bottom: 20px;
+}
+
+.nav-tabs {
+    border-bottom: none;
+	
+}
+
+.nav {
+	display: flex;
+	flex-wrap: wrap;
+	padding-left: 0;
+	margin-bottom: 0;
+	list-style: none;
+	justify-content: center;
+	/*margin: 0 40px 30px 40px;*/
+	
+
+}
+
+.nav-tabs .nav-item.show .nav-link, .nav-tabs .nav-link.active {
+    color: #3F5D45;
+    background-color: #fff;
+    /* border-color: #dee2e6 #dee2e6 #fff; */
+}
+
+.nav-tabs .nav-link {
+    margin-bottom: -1px;
+    background: 0 0;
+    border: 1px solid transparent;
+    border-top-left-radius: 0rem;
+    border-top-right-radius: 0rem;
+	min-width :190px;
+	padding: 16px 0;
+}
+
+.nav-link {
+    display: block;
+    padding: .5rem 1rem;
+    color: #fff;
+    text-decoration: none;
+    transition: color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out;
+}
+
+.nav-link:hover {
+	color: #fff;
+	text-decoration: none;
+}
+
+.nav-titletext
+{
+	font: normal normal 600 20px/20px PingFang TC;
+}
+
+a{
+	color: #3F5D45;
+	text-decoration: none;
+}
+
+a:hover{
+	color: #3F5D45;
+	text-decoration: none;
+}
+
+.next-btn:hover{
+	background-color: #ffd54d;
+}
+
+@media (max-width: 767px)
+{
+.maincontainer 
+{
+width: unset;
+max-width:1024px;
+padding: 0;
+}
+.header_maingraph{
+	margin: 84px 0 0 0;
+    height: 277px;
+    background-size: cover;
+    background-position: center;
+	width: 100%;
+}
+
+.subscribe-struct{
+	padding: 0;
+	flex-direction: column;
+}
+.headbar_link{
+	display: none;
+}
+
+.productsPage {
+    display: flex;
+    margin-bottom: 60px;
+    flex-wrap: wrap;
+    justify-content: center;
+
+}
+
+.product_list {
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 60px;
+    gap: 20px;
+    justify-content: center;
+}
+
+.login{
+	flex-wrap: wrap;
+}
+
+.cart-page{
+	flex-wrap: wrap;
+	justify-content: center;
+}
+
+.transport-content{
+	flex-wrap: wrap;
+	justify-content: center;
+}
+.intro_text-slogan{
+	display: none;
+}
+
+.text-vertical {
+    writing-mode: horizontal-tb;
+}
+
+.intro_content{
+	flex-direction: column;
+}
+.intro_content .intro_photo{
+	max-height: 250px;
+	max-width: 433px;
+}
+.main_menu{
+	padding: 0;
+	margin-top: 0;
+}
+
+.header_maingraph {
+    margin:0;
+}
+
+.headbar {
+    padding: 30px 0;
+    display: flex;
+	align-items: center;
+   
+}
+
+.dehaze{
+	display: block;
+}
+
+.dropdown-toggle::after{
+	display: none;
+}
+
+.checkpage {
+   display: none;
+}
+
+.transport-content{
+	margin: 0;
+}
+
+.pay_maingraph{
+	margin: 0;
+}
+.intro-text {
+    padding: 10px;
+}
+
+.slogan-m{
+	display: block;
+
+}
+.introduct {
+    height:unset;
+   
+}
+
+.ordertotal-struct {
+    flex-basis: 500px;
+    background-color: #3F5D45;
+    position: relative;
+    margin-bottom: 60px;
+}
+
+.cart-page {
+    display: flex;
+    justify-content: space-between;
+    margin:0px;
+    align-items: flex-start;
+}
+.subscribe-bg .subscribe-text {
+
+    margin: 10px 0;
+}
+
+.select {
+
+    flex-basis: 172px;
+}
+
+.label-input-half {
+
+    max-width: 172px;
+}
+
+.nav-tabs .nav-link {
+
+    min-width: 177px;
+}
+.subscribe-bg {
+    height: unset;
+}
+.subscrib-input {
+
+    margin-bottom: 20px;
+}
+
+
+.login-title{
+	text-align: center;
+	font: normal normal 600 36px/43px PingFang TC;
+	color: #EAF0ED;
+	padding: 40px 0;
+
+}
+
+.login-btn{
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	font: 700 24px/20px PingFang TC;
+	color: #3F5D45;
+	padding: 16px 0;
+	background-color: #FFE180
+}
+.login-input-bg {
+	background-color: #3F5D45;
+	
+}
+
+.login-content-community{
+	display: none;
+}
+.login-content {
+    flex-basis: 434px;
+	transition:unset;
+
+}
+.community-m
+{
+	padding: 20px;
+	display: none;
+	display:flex;
+	justify-content: center;
+	max-width: 434px;
+	background-color: #EAF0ED;
+}
+.login-community-logo {
+    width: 330px;
+    height: 56px;
+    margin: 0 auto;
+
+}
+.login-input-bg {
+
+    padding: 0 ;
+
+
+}
+.login-btn{
+	position: unset;
+}
+
+.login{
+	margin-bottom: 111px;
+}
+
+.login-content:hover
+{
+	
+	 
+    transition: unset;
+	box-shadow: unset;
+	
+}
+
+
+}

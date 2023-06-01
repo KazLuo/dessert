@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-wEmeIV1mKuiNpC+IOBjI7aAzPcEZeedi5yW5f2yOq55WWLwNGmvvx4Um1vskeMj0" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/style.css">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ"
+        crossorigin="anonymous"></script>
+    <title>Document</title>
+</head>
+
+<body>
+    <header class="maincontainer">
+        <div class="headbar">
+            <div class="dehaze"> 
+                <ul class="nav nav-pills">
+                <li class="nav-item dropdown">
+                  <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#" role="button" aria-expanded="false"><img src="imge/dehaze-24px.png" alt=""></a>
+                  <ul class="dropdown-menu">
+                    <li class="item"><a href="mainpage.html">首頁</a></li>
+                    <li class="item"><a href="productpage.html">甜點</a></li>
+                    <li class="item"><a href="loginpage.html">登入</a></li>
+                  </ul>
+                </li>
+              </ul>
+            </div>
+            <img src="imge/logo-all-dark.svg" alt="" class="main_logo">
+            <ul class="headbar_link">
+                <li class="item"><a href="mainpage.html">首頁</a></li>
+                <li class="item"><a href="productpage.html">甜點</a></li>
+                <li class="item"><a href="loginpage.html">登入</a></li>
+              
+            </ul>
+            <a href="orderpage.html"><img src="imge/shopping_cart.png" alt=""></a>
+        </div>
+    </header>
+
+    <div class="maincontainer">
+        <div class="transport-content">
+            <div class="transport">
+                <div class="transport-title">
+                    <h2 class="title">發票</h2>
+                    <div class="progressbar">
+                        <img src="/imge/bar_invoice.svg" alt="">
+                    </div>
+                </div>
+
+                <!--
+
+                -->
+                <ul class="nav nav-tabs" id="myTab" role="tablist">
+                    <li class="nav-item" role="presentation">
+                        <button class="nav-link active nav-titletext" id="home-tab" data-bs-toggle="tab"
+                            data-bs-target="#home" type="button" role="tab" aria-controls="home"
+                            aria-selected="true">電子發票</button>
+                    </li>
+                    <li class="nav-item" role="presentation">
+                        <button class="nav-link nav-titletext" id="profile-tab" data-bs-toggle="tab"
+                            data-bs-target="#profile" type="button" role="tab" aria-controls="profile"
+                            aria-selected="false">郵寄發票</button>
+                    </li>
+                </ul>
+                <div class="tab-content" id="myTabContent">
+                    <div class="tab-pane fade show active" id="home" role="tabpanel" aria-labelledby="home-tab">
+                        <div class="transport-input">
+                            <div class="label-full">
+                                <div class="label-text">電子郵件信箱</div>
+                                <input type="text" class="label-input" placeholder="2233114455664444">
+                            </div>
+                        </div>
+                        <div class="transport-input">
+                            <div class="label-full">
+                                <div class="label-text">統一編號 (選填)</div>
+                                <input type="text" class="label-input" placeholder="2233114455664444">
+                            </div>
+                        </div>
+
+                    </div>
+                    <div class="tab-pane fade" id="profile" role="tabpanel" aria-labelledby="profile-tab">
+                        <div class="label-full transport-input">
+                            <div class="label-text">地址
+                                <div class="check"><input type="checkbox" checked="checked">
+                                    <span class="checkmark">同運送地址</span></div>
+                                
+                            </div>
+
+                            <select class="label-input-half select">
+                                <option>高雄市</option>
+                                <option>台北市</option>
+                                <option>台中市</option>
+                                <option>台南市</option>
+                            </select>
+
+
+                            <select class="label-input-half select">
+                                <option>苓雅區</option>
+                                <option>新興區</option>
+                                <option>鳳山區</option>
+                                <option>小港區</option>
+                            </select>
+
+
+                            <input type="text" class="label-input">
+                        </div>
+                        <div class="transport-input">
+                            <div class="label-full">
+                                <div class="label-text">統一編號 (選填)</div>
+                                <input type="text" class="label-input" placeholder="2233114455664444">
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+                <a href="paysuccess.html">
+                    <div class="next-btn">下一步</div>
+                </a>
+
+            </div>
+            <div class="checkpage">
+                <div class="ordertotalcheck-struct mb-20">
+                    <h2 class="ordercheck-title">訂單摘要</h2>
+                    <ul class="ordercheck-price">
+                        <li class="ordercheck-text">
+                            <p>小計</p>
+                            <p>NT$ 2,700</p>
+                        </li>
+                        <li class="ordercheck-text">
+                            <p>運費</p>
+                            <p>NT$ 300</p>
+                        </li>
+                    </ul>
+                    <div class="ordercheck-total">
+                        <div>總計</div>
+                        <div>NT$ 3,000</div>
+                    </div>
+                </div>
+
+                <div class="ordertotalcheck-struct">
+                    <h2 class="ordercheck-title">訂單摘要</h2>
+                    <div class="cart-item-check">
+                        <div class="cart-pic-check"><img src="https://bit.ly/2QvsT63" alt=""></div>
+                        <div class="cart-info">
+                            <div class="cart-contect">
+                                <p class="ordercheck-text">焦糖馬卡龍</p>
+                                <p class="ordercheck-text">NT$ 450</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="cart-item-check">
+                        <div class="cart-pic-check"><img src="https://bit.ly/2zBDAxX" alt=""></div>
+                        <div class="cart-info">
+                            <div class="cart-contect">
+                                <p class="ordercheck-text">焦糖馬卡龍</p>
+                                <p class="ordercheck-text">NT$ 450</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="cart-item-check">
+                        <div class="cart-pic-check"><img src="https://bit.ly/2zKOP7w" alt=""></div>
+                        <div class="cart-info">
+                            <div class="cart-contect">
+                                <p class="ordercheck-text">焦糖馬卡龍</p>
+                                <p class="ordercheck-text">NT$ 450</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="subscribe">
+        <div class="subscribe-bg">
+            <div class="maincontainer">
+                <ul class="subscribe-struct">
+                    <li class="subscribe-text logo-light"><img src="/imge/logo-light.svg" alt="">
+                        <h2>訂閱你我的甜蜜郵件</h2>
+                    </li>
+                    <div class="input-area">
+                        <img class="mailicon" src="/imge/mail-24px.png" alt="">
+                        <input class="subscrib-input" type="text" placeholder="輸入你的電子郵件">
+                        <button class="subscribe-btn"><img src="imge/arrow_forward-24px.png" alt=""></button>
+                    </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <div class="footer">
+        <div class="footer-bg"></div>
+        <div class="maincontainer">
+            <div class="footer-content">
+                <div class="footer-info">
+                    <img src="/imge/logotype.svg " alt="" class="footer-logotype">
+                    <ul class="contact-info">
+                        <li>
+                            <p>07-1234-5678</p>
+                        </li>
+                        <li>
+                            <p>sweetaste@email.com</p>
+                        </li>
+                        <li>
+                            <p>800 高雄市新興區幸福路 520 號</p>
+                        </li>
+                    </ul>
+                </div>
+                <img src="imge/sm-今天是個吃甜點的好日子.svg" alt="" class="footer-slogan">
+            </div>
+            <div class="bottomInfo">
+                <div class="footer-icon">
+                    <img src="imge/ic-line@.svg" alt="">
+                    <img src="imge/ic-facebook.svg" alt="">
+                </div>
+                <span>© 2018 Sweetaste* All Rights Reserved</span>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
