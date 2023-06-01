@@ -1053,8 +1053,8 @@ padding-bottom: 32px;
 }
 
 
-.pay-maingraph{
-	background-image: url(/imge/success.jpg);
+.paymaingraph{
+	background-image: url(https://tingminitime.github.io/sweetaste/img/payment_success.jpg);
 	margin: 0;
 	width: 100%;
 	height: 496px;
