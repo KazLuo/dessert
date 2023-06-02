@@ -96,7 +96,7 @@ margin: 0 auto;
 }
 
 .header_maingraph{
-	background-image: url(https://tingminitime.github.io/sweetaste/img/home_banner.jpg);
+	background-image: url(../imge/home_banner.jpg);
 	margin: 0;
 	width: 100%;
 	height: 496px;
@@ -419,7 +419,7 @@ color: #3F5D45;
 
 
 .header_productgraph{
-	background-image: url(imge/banner.png);
+	background-image: url(../imge/banner.png);
 	margin: 0;
 	width: 100%;
 	height: 496px;
@@ -1054,7 +1054,7 @@ padding-bottom: 32px;
 
 
 .paymaingraph{
-	background-image: url(https://tingminitime.github.io/sweetaste/img/payment_success.jpg);
+	background-image: url(../imge/success.jpg);
 	margin: 0;
 	width: 100%;
 	height: 496px;
