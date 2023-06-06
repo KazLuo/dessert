@@ -1301,7 +1301,7 @@ padding: 0;
 
 .label-input-half {
 
-    max-width: 172px;
+    max-width: 145px;
 }
 
 .nav-tabs .nav-link {
@@ -1400,5 +1400,8 @@ padding: 0;
     margin-bottom: 16px;
 }
 
+.introduct-background {
+    height: unset;
 
-}
+
+}}
