@@ -1226,7 +1226,7 @@ padding: 0;
 }
 .intro_content .intro_photo{
 	max-height: 250px;
-	max-width: 433px;
+	max-width: 374px;
 }
 .main_menu{
 	padding: 0;
@@ -1353,8 +1353,10 @@ padding: 0;
 	display: none;
 	display:flex;
 	justify-content: center;
-	max-width: 434px;
+	margin: 0 auto;
 	background-color: #EAF0ED;
+	max-width: 300px;
+	
 }
 .login-community-logo {
     width: 330px;
@@ -1383,6 +1385,19 @@ padding: 0;
     transition: unset;
 	box-shadow: unset;
 	
+}
+
+.input-area {
+    width: 270px;
+    position: relative;
+}
+
+.login-input {
+    width: 300px;
+    height: 56px;
+    margin: 0 auto;
+    position: relative;
+    margin-bottom: 16px;
 }
 
 
